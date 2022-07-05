@@ -51,11 +51,13 @@ class Program
           Console.WriteLine("How much would you like to deposit?");
           double deposit = double.Parse(Console.ReadLine());
           ATMMachine.makeDeposit(current_user, deposit);
+          Console.WriteLine($"Your balance is now: {ATMMachine.getBalance(current_user)}");
           break;
         case 2:
           Console.WriteLine("How much would you like to withdraw?");
           double withdraw = double.Parse(Console.ReadLine());
           ATMMachine.makeWithdraw(current_user, withdraw);
+          Console.WriteLine($"Your remaining balance is now: {ATMMachine.getBalance(current_user)}");
           break;
         case 3:
           Console.WriteLine($"Your current balance is: {ATMMachine.getBalance(current_user)}");

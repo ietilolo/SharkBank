@@ -47,19 +47,19 @@ class Program
       switch (user_option)
       {
         case 1:
-          Console.WriteLine("How much would you like to deposit?");
+          Console.WriteLine("How much would you like to deposit? \n");
           double deposit = double.Parse(Console.ReadLine());
           ATMMachine.makeDeposit(current_user, deposit);
           Console.WriteLine($"Your balance is now: {ATMMachine.getBalance(current_user)}");
           break;
         case 2:
-          Console.WriteLine("How much would you like to withdraw?");
+          Console.WriteLine("How much would you like to withdraw? \n");
           double withdraw = double.Parse(Console.ReadLine());
           ATMMachine.makeWithdraw(current_user, withdraw);
           Console.WriteLine($"Your remaining balance is now: {ATMMachine.getBalance(current_user)}");
           break;
         case 3:
-          Console.WriteLine($"Your current balance is: {ATMMachine.getBalance(current_user)}");
+          Console.WriteLine($"Your current balance is: {ATMMachine.getBalance(current_user)} \n");
           break;
         case 4:
           Console.WriteLine("Thank you for using ShakBank \n\n");

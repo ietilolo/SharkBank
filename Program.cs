@@ -33,11 +33,8 @@ class Program
       else { Console.WriteLine("Incorrect Pin. Please try again \n"); }
     }
 
-    Console.WriteLine($"Welcome, {current_user.user_name} \n");
-
     do
     {
-      Console.Clear();
       Console.WriteLine("Please choose from the following options.");
       Console.WriteLine("1. Deposit");
       Console.WriteLine("2. Withdraw");
@@ -45,6 +42,7 @@ class Program
       Console.WriteLine("4. Logout\n\n");
 
       user_option = int.Parse(Console.ReadLine());
+      Console.Clear();
 
       switch (user_option)
       {

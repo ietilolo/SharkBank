@@ -37,6 +37,7 @@ class Program
 
     do
     {
+      Console.Clear();
       Console.WriteLine("Please choose from the following options.");
       Console.WriteLine("1. Deposit");
       Console.WriteLine("2. Withdraw");
